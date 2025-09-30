@@ -1,4 +1,5 @@
 import Header from "./Components/Header";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -13,21 +14,27 @@ export default function Home() {
         Crie ou Gerencie Portfólios Facilmente 🚀
       </p>
 
-      <div className="flex flex-col sm:flex-row gap-6">
-        <div className="bg-white shadow-md rounded-2xl p-6 w-64 hover:shadow-lg transition">
-          <h2 className="text-xl font-semibold mb-2">Criar Portfólio</h2>
-          <p className="text-gray-600 mb-4">Crie um novo portfólio</p>
-          <button className="bg-blue-600 hover:bg-amber-400 text-white px-4 py-2 rounded-lg transition">
-            Criar
-          </button>
-        </div>
+       <div className="flex flex-col sm:flex-row gap-6">
+          <div className="bg-white shadow-md rounded-2xl p-6 w-64 hover:shadow-lg transition">
+            <h2 className="text-xl font-semibold mb-2">Criar Portfólio</h2>
+            <p className="text-gray-600 mb-4">Crie um novo portfólio</p>
+            <Link
+              href="/create"
+              className="bg-blue-600 hover:bg-amber-400 text-white px-4 py-2 rounded-lg transition inline-block"
+            >
+              Criar
+            </Link>
+          </div>
 
         <div className="bg-white shadow-md rounded-2xl p-6 w-64 hover:shadow-lg transition">
           <h2 className="text-xl font-semibold mb-2">Gerenciar Portfólios</h2>
           <p className="text-gray-600 mb-4">Veja e edite seus portfólios</p>
-          <button className="bg-blue-600 hover:bg-amber-400 text-white px-4 py-2 rounded-lg transition">
-            Gerenciar
-          </button>
+          <Link
+              href="/manage"
+              className="bg-blue-600 hover:bg-amber-400 text-white px-4 py-2 rounded-lg transition inline-block"
+            >
+              Gerenciar
+            </Link>
         </div>
       </div>
     </main>
