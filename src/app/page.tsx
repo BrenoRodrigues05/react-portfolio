@@ -1,3 +1,4 @@
+import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Link from "next/link";
 
@@ -38,6 +39,7 @@ export default function Home() {
         </div>
       </div>
     </main>
+    <Footer />
     </>
   );
 }
