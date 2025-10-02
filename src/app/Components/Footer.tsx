@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full bg-gray-100 border- dark:bg-gray-900 mt-8">
+    <footer className="w-full bg-gray-100 border-t border-gray-200 dark:bg-gray-900 mt-8">
       <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between text-gray-600 text-sm">
         <p suppressHydrationWarning className="mb-3 sm:mb-0">
   © {new Date().getFullYear()} Meu Portfólio. Todos os direitos reservados.

@@ -1,12 +1,8 @@
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <>
-    <Header></Header>
-    <main className="min-h-screen flex flex-col items-center justify-center bg-gray-50 text-center p-6">
+    <main className="flex flex-col items-center justify-center bg-black text-center p-6">
       <h1 className="text-5xl font-bold mb-4">
         Meu <span className="text-blue-700">Portfólio</span>
       </h1>
@@ -39,7 +35,5 @@ export default function Home() {
         </div>
       </div>
     </main>
-    <Footer />
-    </>
   );
 }
