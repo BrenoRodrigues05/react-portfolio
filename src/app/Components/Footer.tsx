@@ -10,7 +10,7 @@ export default function Footer() {
             href="https://github.com/BrenoRodrigues05"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-600 transition"
+            className="hover:text-blue-600 transition text-foreground"
           >
             GitHub
           </a>
