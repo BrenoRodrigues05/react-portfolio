@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { PortfoliosCard } from "../Components/PortfoliosCard"
+import { CreatePortfolios } from "../Components/CreatePortfolios"
 import { Span } from "next/dist/trace"
 
 export default function Create() {
@@ -91,7 +91,7 @@ export default function Create() {
         {/* Pré-visualização */}
         <div className="flex flex-col items-center gap-4 w-full md:w-1/2">
           <h2 className="text-xl font-semibold">Pré-visualização</h2>
-          <PortfoliosCard
+          <CreatePortfolios
             title={form.title || "Título do Portfólio"}
             description={form.description || "Descrição do Portfólio"}
             content={form.content || "Conteúdo do Portfólio"}

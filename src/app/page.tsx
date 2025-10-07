@@ -45,7 +45,7 @@ export default function Home() {
               href="/manage"
               className="bg-blue-600 hover:bg-amber-400 text-white dark:text-gray-900 font-medium px-6 py-2 rounded-lg transition-colors duration-300 text-base"
             >
-              Gerenciar
+              Ver
             </Link>
           </div>
         </div>
