@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 interface PortfoliosCardProps {
   title: string;
@@ -15,6 +16,7 @@ interface PortfoliosCardProps {
   footer: string;
   imageUrl?: string;
   technologies?: string[]; // badges
+  details: string;
 }
 
 export function PortfoliosCard({
@@ -24,6 +26,7 @@ export function PortfoliosCard({
   footer,
   imageUrl,
   technologies,
+  details,
 }: PortfoliosCardProps) {
   const defaultImage = "/placeholder.svg"; // placeholder local
 
@@ -66,6 +69,16 @@ export function PortfoliosCard({
           </div>
         )}
       </CardContent>
+
+      {/*Botão Detalhes*/}
+      <div className="flex justify-center">
+  <Button
+    asChild
+    className="bg-blue-600 hover:bg-amber-400 text-white dark:text-gray-900 font-medium px-6 py-2 rounded-lg transition-colors duration-300 text-base"
+  >
+    <a href={details}>Ver Portfólio</a>
+  </Button>
+</div>
 
       {/* Rodapé */}
       <CardFooter className="mt-auto px-4 py-2 border-t border-b-blue-600">
